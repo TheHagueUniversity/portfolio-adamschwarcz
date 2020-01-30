@@ -16,14 +16,16 @@
             //var innerContent = $('.items > div');
            
             outerContent.scrollLeft(outerContent.width() / 0.5);
-   
+
             });
-          });
+
+        });
       </script>
               
   </head>
   <body>
     <main>
+
       <!-- ***************  Navigation  **************** -->
       <nav>
         <div class="nav-wrap"> 
@@ -43,7 +45,7 @@
       </nav>
 
       <!-- *************** Hero Section  **************** -->
-      <header>
+      <header class ="hero">
         <div class="content-wrap">
           <div class="job-wrap">
             <div class="job">User Experience Designer</div>
@@ -54,9 +56,9 @@
       </header>
 
       <!-- ************ Projects  ************** -->
-        <div class="grid-item main">
+        <section class="projects main">
           <div id="items" class="items">  
-            <div class="project-wrap">
+            <div id="project-wrap" class="project-wrap">
               <a href="#" class="project-item kios">
                 <div class="brand"> 
                   <img src="images/kios-logo.svg"> 
@@ -120,9 +122,72 @@
                 <div class="project-text">Card Personalization Tool</div>
                 <div class="project-button">Case Study</div>
             </div>
-
           </div>
-        </div>
+        </section>
+
+        <!-- ************ Experience ************** -->
+        <section class="experience">
+          <div class="content-wrap">
+            <h1 class="jumbo h1">Explore my world.</h1>
+
+
+            <!-- ************ Education ************** -->
+            <div class="education"> 
+              <h1>Education</h1>
+              <div class="experience-item university">
+                <div class="top-area">
+                  <p class="title">User Experience Design</p> 
+                  <img src="images/thuas-avatar.svg">
+                </div>
+                <p class="period">Bachelor of Science  •  2019 – 2022</p> 
+                <p class="institution">The Hague University of Applied Sciences</p> 
+                <div class="link-icon">
+                  <a href="http://thuas.com/" target="_blank">
+                    <img src="images/link-green.svg">
+                  </a>
+                </div>
+              </div> 
+
+              <div class="soon">
+                <p class="maybe">maybe one day...</p>
+              </div>
+
+            </div>
+
+
+            <!-- ************ Work Experience ************** -->
+            <div class="work"> 
+              <h1>Work Experience</h1>
+              <div id="backdrop" class="experience-item thefruity">
+                <div class="top-area">
+                  <p class="title">Startup Founder</p> 
+                  <img src="images/thefruity-avatar.svg">
+                </div>
+                <p class="period">2018 – Present</p> 
+                <p class="institution">TheFruity™</p> 
+                <div class="link-icon">
+                  <a href="#" target="_blank">
+                    <img src="images/link-orange.svg">
+                  </a>
+                </div>
+              </div>
+              </a>
+
+              <div class="experience-item alttag">
+                <div class="top-area">
+                  <p class="title">User Experience Designer</p> 
+                  <img src="images/alttag-avatar.svg">
+                </div>
+                <p class="period">2019 – Present</p> 
+                <p class="institution">AltTag Media s.r.o.</p> 
+                <div class="link-icon">
+                  <a href="http://alttag.media" target="_blank">
+                    <img src="images/link-blue.svg">
+                  </a>
+                </div>
+              </div>
+
+        </section>
       <script src="script.js"></script>
     </main>
   </body>

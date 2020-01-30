@@ -21,15 +21,24 @@ body {
 
 h1 {
   font-size: 48px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 24px;
 }
 
+p {
+  line-height: 0px;
+}
+
 a:focus {
   outline: none;
   box-shadow: 0 0 0 3px #007cba;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content-wrap {
@@ -142,7 +151,10 @@ header h2 {
   border-radius: 100px;
 }
 
-.grid-item {
+/* Projects (Horizontally Scrollable)
+------------------------------------------------*/
+
+.projects {
   color: #fff;
   background: skyblue;
   padding: 3.5em 1em;
@@ -164,20 +176,23 @@ header h2 {
 .items {
   position: relative;
   width: 100%;
+  height: 620px;
   padding: 0 32px;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
-  transition: all 0.2s;
-  transition: 0.2s ease-out;
+  transition: all 0.5s ease-out;
   }
+
+.items:hover {
+  transform: scale(1.02);
+}
 
 .items.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
   -webkit-backface-visibility: hidden;
-  transition: 0.2s ease-out;
-  transform: scale(1.02);
+  transition: all 0.5s ease-out;
   }
 
 .project-item {
@@ -192,7 +207,7 @@ header h2 {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   -webkit-overflow-scrolling: touch;
-  transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .hallmark {
@@ -247,16 +262,18 @@ header h2 {
 
 .project-wrap:hover {
   transform: scale(1.075);
-  transition: all 0.150s;
+  transition: all 0.3s;
 }
+
 
 #items:hover > .project-wrap:not(:hover) {
   opacity: 0.3;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  transform: scale(0.95);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .project-wrap {
@@ -266,6 +283,7 @@ header h2 {
   min-height: 450px;
   max-width: 330px;
   max-height: 450px;
+  transition: 0.5s ease-out;
 }
 
 .project-wrap:hover .project-text{
@@ -289,6 +307,7 @@ header h2 {
 }
 
 .project-wrap:active {
+  transform: scale(1.085);
 }
 
 .project-item:focus {
@@ -316,6 +335,181 @@ header h2 {
   border-radius: 100px;
   transform: translateY(20px);
 }
+
+
+/* Experience
+------------------------------------------------*/
+
+.experience {
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.jumbo { 
+  text-align: center;
+  margin: 0;
+  padding: 56px 0;
+  font-size: 88px;
+  background: -webkit-linear-gradient(43deg, #7933C8 0%, #ed3e6c 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+ }
+
+.education {
+  width: 481px;
+  background: red;
+  float: left;
+  padding: 40px 40px;
+  background: linear-gradient(230deg, rgba(30, 27, 30, 0.4) 0%, #1E1B1E 100%);
+  border-radius: 32px;
+  margin-right: 16px;
+
+}
+
+.work {
+  width: 481px;
+  background: blue;
+  float: right;
+  padding: 40px 40px;
+  background: linear-gradient(230deg, rgba(30, 27, 30, 0.4) 0%, #1E1B1E 100%);
+  border-radius: 32px;
+  margin-left: 16px;
+}
+
+.education h1{
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 24px;
+
+}
+
+.work h1{
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.experience-item {
+  position: relative;
+  background: #343134;
+  border-radius: 24px;
+  margin-top: 16px;
+  padding: 8px 16px 8px 24px;
+  height: 130px;
+  transition: 0.3s ease-out; 
+}
+
+.top-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-area img{
+  margin-left: auto;
+  order: 2;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.period {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: #9B9B9B;
+}
+
+.institution {
+  position: absolute;
+  bottom: 12px;
+  left: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+.link-icon a {
+  position: relative;
+  height: 36px;
+  float: right;
+  bottom: -8px;
+  border-radius: 8px;
+  padding: 8px;
+  opacity: 0;
+  transition: 0.3s ease-out; 
+}
+
+
+.maybe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #505050;
+}
+
+.soon {
+  position: relative;
+  background: #343134;
+  border-radius: 24px;
+  margin-top: 16px;
+  padding: 8px 16px 8px 24px;
+  height: 130px;
+  background: rgba(0, 0, 0, 0.0);
+  border: 1px dashed #323232;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s;
+  box-shadow: 0px 8px 25px -15px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);;
+}
+
+.experience-item:hover > .link-icon a {
+  opacity: 1;
+  transform: translateY(-6px);
+  transition: all 0.5s;
+}
+
+.thefruity:hover {
+  background: rgba(52, 49, 52, 0.4);
+}
+
+.thefruity:hover > .period {
+  color: #FF9C33;
+  transition: all 0.2s;
+}
+
+.alttag:hover {
+  background: rgba(52, 49, 52, 0.4);
+}
+
+.alttag:hover > .period {
+  color: #429FD9;
+  transition: all 0.2s;
+}
+
+.university:hover {
+  background: rgba(52, 49, 52, 0.4);
+}
+
+.university:hover > .period {
+  color: #9EA700;
+  transition: all 0.2s;
+}
+
+
+
+
+
 
 
 
