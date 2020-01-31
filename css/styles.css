@@ -28,9 +28,19 @@ h2 {
   font-size: 24px;
 }
 
-p {
-  line-height: 0px;
-}
+.jumbo { 
+  text-align: center;
+  margin: 0;
+  padding: 56px 0;
+  font-size: 88px;
+ }
+
+ .gradient {
+  background: -webkit-linear-gradient(43deg, #7933C8 0%, #ed3e6c 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+ }
 
 a:focus {
   outline: none;
@@ -347,16 +357,9 @@ header h2 {
   overflow: hidden;
 }
 
-.jumbo { 
-  text-align: center;
-  margin: 0;
-  padding: 56px 0;
-  font-size: 88px;
-  background: -webkit-linear-gradient(43deg, #7933C8 0%, #ed3e6c 46%, #FFCC70 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: fixed;
- }
+.experience p {
+  line-height: 0px;
+}
 
 .education {
   width: 481px;
@@ -504,6 +507,132 @@ header h2 {
 .university:hover > .period {
   color: #9EA700;
   transition: all 0.2s;
+}
+
+
+/* Future Challeneges
+------------------------------------------------*/
+
+.future-challenges {
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.future-challenges img {
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 40px;
+}
+
+.future-challenges p {
+  margin-top: 40px;
+  color: #727272;
+  text-align: center;
+  line-height: 24px;
+
+}
+
+.future-challenges h2 {
+  font-size: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin: 0;
+}
+
+.future-challenges h1 {
+  position: relative;
+  z-index: 5;
+}
+
+.design-systems {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 40px 40px;
+  background: linear-gradient(180deg, #0E2C3A 0%, #040D12 100%);
+  border-radius: 56px;
+  z-index: -1;
+}
+
+.else {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 40px 40px;
+  background: linear-gradient(180deg, #0E2C3A 0%, #040D12 100%);
+  border-radius: 56px;
+  z-index: -1;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  margin: 0 32px;
+  z-index: 2;
+}
+
+.card:hover {
+  z-index: 3;
+}
+
+.card:hover .transform-left {
+  transform: scale(3) translateX(-50px) translateY(30px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.card:hover .transform-middle {
+  transform: scale(2.75) translateX(0px) translateY(50px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.card:hover .transform-right {
+  transform: scale(3) translateX(50px) translateY(30px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.transform-left, .transform-middle, .transform-right {
+  transition: 0.5s ease-out;
+  opacity: 0.5;
+}
+
+.opacity:hover > #card-bg {
+  transition: all 0.5s;
+  opacity: 1;
+  background: linear-gradient(180deg, #0E2C3A 0%, rgba(14, 44, 58, 0.3) 100%);
+  backdrop-filter: blur(4px);
+}
+
+.opacity:not(:hover) > h2 {
+  transition: all 0.5s;
+  opacity: 0.25;
+}
+
+.opacity:not(:hover) > p {
+  transition: all 0.5s;
+  opacity: 0.25;
+}
+
+.description {
+  margin-top: 0px;
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+.opacity:not(:hover) > .description {
+  transform: translateY(0px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 
