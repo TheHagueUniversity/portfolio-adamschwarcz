@@ -1,0 +1,215 @@
+/* Header
+------------------------------------------------*/
+
+header {
+  overflow: hidden;
+  padding: 72px 40px;
+  margin-top: -72px;
+  background: linear-gradient(180deg, #092A5F 0%, rgba(9, 42, 95, 0) 100%);
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  line-height: 64px;
+  padding-top: 24px;
+  margin-bottom: 16px;
+}
+
+header h2 {
+  color: #C1E7FB;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 48px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 175px;
+  padding-top: 72px;
+}
+
+/* Overview
+------------------------------------------------*/
+
+.overview {
+  color: #fff;
+  padding: 72px 40px;
+  font-size: 1em;
+  font-weight: 700;
+  overflow: hidden;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.text-area {
+  width: 35%;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  background: linear-gradient(70.53deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-radius: 12px;
+}
+
+.text-area p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #727272;
+}
+
+.picture-area {
+  width: 65%;
+  float: left;
+}
+
+.picture-area img {
+  width: 100%;
+  position: relative;
+}
+
+
+/* Text Blocks
+------------------------------------------------*/
+
+.wrap-800 {
+ border-top: 1px solid #454545;
+}
+
+.content-block {
+ padding-top: 96px;
+}
+
+.content-block h1 {
+  color: white;
+  margin-top: 16px;
+  line-height: 56px;
+  margin-bottom: 32px;
+
+}
+
+.content-block h2 {
+  font-weight: 400;
+  color: #727272;
+  line-height: 24px;
+}
+
+.content-block p {
+  font-weight: 400;
+  color: #727272;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+/* Assignment & Brand Analysis */
+
+.images-2 img{
+  width: 48%;
+  float: left;
+  border-radius: 32px;
+}
+
+.assignment h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #9EA700;
+}
+
+.assignment h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #727272;
+}
+
+.assignment span {
+  color: white;
+}
+
+/* Information Hierarchy */
+
+.images-1 img{
+  width: 100%;
+  float: left;
+}
+
+
+/* Prototype */
+
+.images-3 img{
+  width: 30%;
+  float: left;
+}
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0px;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+}
+
+footer img {
+  margin-right: 8px;
+}
+
+footer a {
+  display: flex;
+  padding: 8px 16px;
+  margin-left: 12px;
+  line-height: 0;
+  color: white;
+  background: #0085FF;
+  border: 1px solid #015CB0;
+  border-radius: 32px;
+}
+
+footer a:hover {
+  background: #005AAD;
+}
+
+footer a:focus {
+  background: #005AAD;
+  border: 1px solid black;
+  box-shadow: inset 0 0 0 2px black, 0 0 0 3px #007cba;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
