@@ -2,6 +2,7 @@
 const draggableElements = document.querySelectorAll(".draggable");
 const droppableElements = document.querySelectorAll(".droppable");
 
+
 draggableElements.forEach(elem => {
   elem.addEventListener("dragstart", dragStart); // Fires as soon as the user starts dragging an item - This is where we can define the drag data
   // elem.addEventListener("drag", drag); // Fires when a dragged item (element or text selection) is dragged
@@ -41,6 +42,7 @@ function dragOver(event) {
 }
 
 function dragLeave(event) {
+
   if(!event.target.classList.contains("dropped")) {
     event.target.classList.remove("droppable-hover");
   }
@@ -49,6 +51,7 @@ function dragLeave(event) {
 function drop(event) {
   event.preventDefault(); // This is in order to prevent the browser default handling of the data
   event.target.classList.remove("droppable-hover");
+  window.open('mailto: adam@schwarcz.me', '_blank');
   const draggableElementData = event.dataTransfer.getData("text"); // Get the dragged data. This method will return any data that was set to the same type in the setData() method
   const droppableElementData = event.target.getAttribute("data-draggable-id");
   const isCorrectMatching = draggableElementData === droppableElementData;
@@ -66,3 +69,10 @@ function drop(event) {
     event.target.insertAdjacentHTML("afterbegin");
   }
 }
+
+
+
+
+
+
+

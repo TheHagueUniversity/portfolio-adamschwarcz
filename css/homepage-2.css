@@ -1,0 +1,499 @@
+/* Future Challeneges
+------------------------------------------------*/
+
+@media (max-width: 960px) {
+ .card{ 
+    margin: 32px 32px 72px 32px !important;
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+}
+
+  .future-challenges .flex-wrap {
+    display: block;
+  }
+
+  .future-challenges img {
+    position: initial !important;
+    margin: 0 !important;
+  }
+
+  .card-bg {
+    display: none;
+  }
+
+  .description {
+    margin-top: 24px !important;
+    transform: translateY(0px) !important;
+    opacity: 1 !important; 
+  }
+
+  .opacity h2 {
+    opacity: 1 !important;
+  }
+
+  .opacity p {
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .future-challenges .jumbo{
+    font-size: 64px !important;
+    line-height: 72px !important;
+    padding-bottom: 40px;
+    padding-top: 72px;
+  }
+
+  .future-challenges {
+    padding-bottom: 72px !important;
+  }
+}
+
+.future-challenges {
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 72px;
+  padding-bottom: 136px;
+}
+
+.future-challenges img {
+  position: absolute;
+  margin-left: 37px;
+  margin-top: 40px;
+}
+
+.future-challenges p {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 24px;
+  color: #727272;
+}
+
+.future-challenges h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 32px;
+  margin: 0;
+}
+
+.future-challenges h1 {
+  position: relative;
+  z-index: 5;
+  color: white;
+}
+
+.card-bg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 40px 40px;
+  background: rgba(40, 37, 40, 0.33);
+  border-radius: 56px;
+  z-index: -1;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  margin: 0 32px;
+  z-index: 2;
+}
+
+.card:hover {
+  z-index: 3;
+}
+
+.card:hover .transform-left {
+  transform: scale(3) translateX(-50px) translateY(30px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.card:hover .transform-middle {
+  transform: scale(2.75) translateX(0px) translateY(30px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.card:hover .transform-right {
+  transform: scale(3) translateX(50px) translateY(30px);
+  border-radius: 300px;
+  transition: all 0.5s;
+}
+
+.transform-left, .transform-middle, .transform-right {
+  transition: 0.5s ease-out;
+  opacity: 0.8;
+}
+
+.opacity:hover > #design-systems-bg {
+  transition: all 0.5s;
+  opacity: 1;
+  background: rgba(40, 35, 40, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.opacity:hover > #data-bg {
+  transition: all 0.5s;
+  opacity: 1;
+  background: rgba(40, 35, 40, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.opacity:hover > #react-bg {
+  transition: all 0.5s;
+  opacity: 1;
+  background: rgba(40, 35, 40, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.opacity:not(:hover) > h2 {
+  transition: all 0.5s;
+  opacity: 0.25;
+}
+
+.opacity:not(:hover) > p {
+  transition: all 0.5s;
+  opacity: 0.25;
+}
+
+.description {
+  margin-top: 0px;
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+.opacity:not(:hover) > .description {
+  transform: translateY(0px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* Contact
+------------------------------------------------*/
+
+@media (max-width: 650px) {
+ .contact .wrapper{
+  display: none;
+ }
+
+ .contact h2 {
+  display: none;
+ }
+
+ .contact h1 {
+  font-size: 64px;
+  line-height: 72px !important;
+  padding: 32px 0 !important;
+ }
+
+ .email {
+  padding-top: 0 !important;
+ }
+}
+
+
+.contact {
+margin-top: -24px;
+}
+
+.contact h1 {
+  color: white;
+  line-height: 0px;
+}
+
+.contact h2 {
+  padding-top: 16px;
+  padding-bottom: 96px;
+  color: #727272;
+  text-align: center;
+  font-weight: 300;
+  line-height: 32px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.yellow {
+  color: #E8AA00;
+
+}
+
+.drop-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  margin-top: 96px;
+  width: 250px;
+  height: 250px;
+  border-radius: 56px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background: #161316;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  padding: 20px;
+  background: #0057FF;
+  border-radius: 40px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 100px;
+}
+
+.draggable-elements img {
+  position: relative;
+  right: 25px;
+  bottom: 25px;
+}
+
+
+.drag-area {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: 25px;
+}
+
+.dotted-lines {
+  position: absolute;
+  width: 480px;
+  top: -10px;
+  left: 160px;
+  transform: scale(1.2);
+  z-index: 3;
+}
+
+lottie-player {
+position: absolute; 
+transform: translateY(-172px);
+width: 150px; 
+height: 150px;
+z-index: -2;
+}
+
+.wrap{
+display: flex;
+justify-content: center;
+}
+
+.draggable-elements {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  transition: 0.1s ease-out;
+}
+.draggable {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 1;
+}
+.droppable {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 75px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #161316;
+  border: 1px dashed #454245;
+  border-radius: 64px;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+.droppable span {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.plane {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.check {
+  display: none;
+  background: #0057FF;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.plane-hover {
+  display: none;
+  background: #0057FF;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.droppable.droppable-hover {
+  border-width: 0px;
+  background: background: rgba(0, 133, 255, 0.2);
+  transform: scale(1.5);
+  border-radius: 120px
+}
+
+.droppable.droppable-hover > .plane{
+  display: none;
+  background: #1FC21C;
+  box-shadow: 0 0 0 4px rgba(31, 194, 28, 0.2);
+}
+
+.droppable.droppable-hover > .plane-hover{
+  display: flex;
+  background: #0085FF;
+  box-shadow: 0 0 0 4px rgba(0, 133, 255, 0.2);
+}
+
+.droppable.dropped {
+  border-style: solid;
+  color: #fff;
+}
+
+.droppable.dropped > .check{
+  display: flex;
+  background: #1FC21C;
+}
+
+.droppable.dropped > .plane{
+  display: none;
+}
+
+.droppable.dropped span {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.droppable.dropped i {
+  pointer-events: none;
+}
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.5;
+  cursor: default;
+}
+.draggable.dragged:hover {
+  opacity: 0.5;
+}
+
+.draggable-elements:hover {
+  transition: all 0.2s;
+  transform: scale(1.1);
+}
+
+.draggable-elements:hover ~ lottie-player {
+  transition: all 0.2s;
+  transform: translateY(-174px) translateX(-3px) scale(1.1);
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .draggable-elements { margin: 1.5rem; }
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 104px 0px 24px 0px;
+}
+
+.email > .btn {
+  display: flex;
+  padding: 4px 24px;
+  margin-top: 64px;
+  line-height: 0;
+  font-size: 24px;
+  color: white;
+  background: #0085FF;
+  border: 1px solid #015CB0;
+  border-radius: 32px;
+}
+
+.email > .btn:hover {
+  background: #005AAD;
+}
+
+.email > .btn:focus {
+  background: #005AAD;
+  border: 1px solid black;
+  box-shadow: inset 0 0 0 2px black, 0 0 0 3px #007cba;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+}
+
+.social-icon {
+  display: flex;
+  padding: 16px;
+  margin: 0 8px;
+  background: black;
+  border-radius: 40px;
+  transition: 0.2s ease-out;
+}
+
+.social-icon:hover {
+  background: #393939;
+  transform: scale(1.1);
+  transition: all 0.2s;
+
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+} 
+
+/* Footer
+------------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+  padding: 8px 0px;
+  color: white;
+  border-top: 1px solid #232323;
+}
+

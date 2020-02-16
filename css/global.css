@@ -68,7 +68,7 @@ h2 {
 .jumbo { 
   text-align: center;
   margin: 0;
-  padding: 56px 0;
+  padding: 96px 0;
   font-size: 88px;
   line-height: 96px;
  }
@@ -166,10 +166,6 @@ a {
 
   .width-60{
   width: 100% !important;
-  }
-
-  .experience p {
-  font-size: 16px;
   }
 
 }

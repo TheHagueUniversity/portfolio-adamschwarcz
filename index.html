@@ -5,23 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Schwarcz User Experience Designer</title>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Public+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/homepage-1.css">
+    <link rel="stylesheet" href="css/homepage-2.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-
-         $(document).ready(function(){
-             
-          $(document).ready(function(){
-            var outerContent = $('.items');
-            //var innerContent = $('.items > div');
-           
-            outerContent.scrollLeft(outerContent.width() / 0.5);
-
-            });
-
-        });
-      </script>
               
   </head>
   <body>
@@ -45,7 +32,6 @@
         </div>
       </nav>
 
-
       <!-- *************** Hero Section  **************** -->
       <header class ="hero">
         <div class="wrap-1080">
@@ -60,31 +46,6 @@
       <!-- ************ Projects  ************** -->
         <section id="work" class="projects main">
           <div id="items" class="items">  
-            <div id="project-wrap" class="project-wrap">
-              <div href="#" class="project-item kios">
-                <div class="brand"> 
-                  <img src="images/kios-logo.svg"> 
-                </div>
-                <div class="thumbnail">
-                  <img src="images/kios-project.png"> 
-                </div>
-              </div>
-                <div class="project-text">Complete Website Design</div>
-                <a class="project-button-disabled">Coming Soon</a>
-            </div>
-
-            <div class="project-wrap">
-              <div href="#" class="project-item tui">
-                <div class="brand"> 
-                  <img src="images/tui-logo.svg"> 
-                </div>
-                <div class="thumbnail">
-                  <img src="images/tui-project.png"> 
-                </div>
-              </div>
-                <div class="project-text">Landing Page Experience</div>
-                <a href="tui-landing-page.html" class="project-button">Case Study</a>
-            </div>
 
             <div class="project-wrap">
               <div href="#" class="project-item hallmark">
@@ -113,6 +74,32 @@
             </div>
 
             <div class="project-wrap">
+              <div href="#" class="project-item tui">
+                <div class="brand"> 
+                  <img src="images/tui-logo.svg"> 
+                </div>
+                <div class="thumbnail">
+                  <img src="images/tui-project.png"> 
+                </div>
+              </div>
+                <div class="project-text">Landing Page Experience</div>
+                <a href="tui-landing-page.html" class="project-button">Case Study</a>
+            </div>
+
+            <div id="project-wrap" class="project-wrap">
+              <div href="#" class="project-item kios">
+                <div class="brand"> 
+                  <img src="images/kios-logo.svg"> 
+                </div>
+                <div class="thumbnail">
+                  <img src="images/kios-project.png"> 
+                </div>
+              </div>
+                <div class="project-text">Complete Website Design</div>
+                <a class="project-button-disabled">Coming Soon</a>
+            </div>
+
+            <div class="project-wrap">
               <div href="#" class="project-item the-concept">
                 <div class="brand"> 
                   <img src="images/the-concept-logo.svg"> 
@@ -130,7 +117,7 @@
         <!-- ************ Experience ************** -->
         <section class="experience">
           <div class="wrap-1080">
-            <h1 class="jumbo gradient h1">Explore my world.</h1>
+            <h1 class="jumbo gradient h1">Explore my world</h1>
 
 
             <!-- ************ Education ************** -->
@@ -141,7 +128,7 @@
                   <p class="title">User Experience Design</p> 
                   <img src="images/thuas-avatar.svg">
                 </div>
-                <p class="period">Bachelor of Science  •  2019 – 2022</p> 
+                <p class="period">BSc • 2019 – 2022</p> 
                 <p class="institution">The Hague University of Applied Sciences</p> 
                 <div class="link-icon">
                   <a href="http://thuas.com/" target="_blank">
@@ -201,8 +188,8 @@
               <!-- ************ Design Systems ************** -->
               <div class="card opacity">
                 <img src="images/design-systems.svg">
-                <div id="card-bg" class="design-systems transform-left"></div>
-                <p>I have been recently interested in</p>
+                <div id="design-systems-bg" class="card-bg transform-left"></div>
+                <p>I have been recently in &nbsp;&#10084;&#65039;with</p>
                 <h2>Design Systems</h2>
                 <p class="description">Designing a complex ecosystem of layout components to maintain consistency,  perform good usability and match brand's visual language.</p>
               </div>
@@ -210,12 +197,20 @@
               <!-- ************ Design Systems ************** -->
               <div class="card opacity">
                 <img src="images/react.svg">
-                <div id="card-bg" class="else transform-middle"></div>
-                <p>I really want to learn</p>
+                <div id="react-bg" class="card-bg transform-middle"></div>
+                <p>And I really want to &#x1F393;learn</p>
                 <h2>React Framework</h2>
                 <p class="description">Designing a complex ecosystem of layout components to maintain consistency,  perform good usability and match brand's visual language.</p>
               </div>
 
+              <!-- ************ Design Systems ************** -->
+              <div class="card opacity">
+                <img src="images/data-science.svg">
+                <div id="data-bg" class="card-bg transform-right"></div>
+                <p>And I'd also like to &nbsp;&#129504;explore</p>
+                <h2>Data Science</h2>
+                <p class="description">Designing a complex ecosystem of layout components to maintain consistency, perform good usability and match brand's visual language.</p>
+              </div>
             </div>
          </section>
 
@@ -254,15 +249,15 @@
               <div class="droppable-elements">
                 <div class="droppable" data-draggable-id="frog">
 
-                  <div class=plane>
+                  <div class="plane">
                     <img src="images/paper-plane.svg">
                   </div>
 
-                  <div class=plane-hover>
+                  <div class="plane-hover">
                     <img src="images/plane-hover.svg">
                   </div>
 
-                  <div class=check>
+                  <div class="check">
                     <img src="images/check.svg">
 
                   </div>
@@ -303,6 +298,7 @@
         </footer>
       <script src="script.js"></script>
       <script src="dragged.js"></script>
+      </script>
     </main>
   </body>
 </html>
