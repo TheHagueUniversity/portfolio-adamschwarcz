@@ -42,12 +42,14 @@ header h2 {
   display: inline-flex;
   margin: 32px 0px;
   border-radius: 8px;
+  padding: 0 16px;
 }
 
 .see-work-below p {
   color: white;
   font-size: 24px;
   margin: 0;
+
 }
 
 .see-work-below p:hover {
@@ -66,22 +68,48 @@ header h2 {
 
 @media (max-width: 960px) {
 
+  header {
+    padding: 40px 0px 40px 0px;
+  }
+
+  header .wrap-1080 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
   header h1 {
-    font-size: 48px;
-    text-align: left;
+    font-size: 40px;
   }
 
   header h2 {
-    text-align: left;
     font-size: 20px;
   }
 
   .job-wrap {
-    display: inline-flex;
+    display: flex;
   }
 
   .job{
     font-size: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 350px) {
+
+  header h1 {
+    font-size: 32px;
+    line-height: 48px !important;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .job{
+    font-size: 16px;
   }
 }
 
