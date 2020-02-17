@@ -431,13 +431,18 @@ header h2 {
 }
 
 @media (max-width: 560px) {
+
  .title{ 
   font-size: 20px; 
   line-height: 0 !important;
-  
+  }
 
   .link-icon a {
     bottom: -24px;
+  }
+
+  .maybe {
+    line-height: 32px !important;
   }
 
   .experience p {
@@ -479,7 +484,6 @@ header h2 {
   }
 
   .maybe{
-    line-height: 32px !important;
     text-align: center;
   }
 

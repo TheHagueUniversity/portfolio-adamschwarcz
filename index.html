@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Schwarcz User Experience Designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Public+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Public+Sans:3,00,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/homepage-1.css">
     <link rel="stylesheet" href="css/homepage-2.css">
-    <link rel="stylesheet" href="css/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-              
   </head>
   <body>
     <main>
@@ -40,13 +39,17 @@
           </div>
           <h1>Hello. &#128075; This is Adam Schwarcz.</h1>
           <h2>Currently based in The Hague, Netherlands pursuing Bachelors of Science in User Exprience Design at The Hague University of Applied Sciences.</h2>
+
+          <a href="#work-sm" class="see-work-below">
+            <p>See my work below</p>
+            <img src="images/arrow-down.svg">
+          </a>
         </div>
       </header>
 
       <!-- ************ Projects  ************** -->
         <section id="work" class="projects main">
           <div id="items" class="items">  
-
             <div class="project-wrap">
               <div href="#" class="project-item hallmark">
                 <div class="brand"> 
@@ -113,6 +116,57 @@
             </div>
           </div>
         </section>
+
+      <!-- ************ Projects Mobile ************** -->
+        <section id="work-sm" class="projects-sm">
+          <div id="items-sm" class="items-sm">  
+            <div class="project-wrap-sm">
+              <div onclick="window.location='tui-landing-page.html'" href="#" class="project-item-sm hallmark">
+                <div class="brand"> 
+                  <img src="images/hallmark-logo.svg"> 
+                </div>
+                <p class="project-text-sm">Card Personalization Tool</p> 
+                <a href="#" class="project-link-sm">
+                  <p>View case study</p>
+                  <img src="images/arrow-left.svg">
+                </a>
+                <div class="thumbnail-sm">
+                  <img src="images/hallmark-project-sm.png"> 
+                </div>
+              </div>
+
+            <div class="project-wrap-sm">
+              <div onclick="window.location='tui-landing-page.html'" href="#" class="project-item-sm thuas">
+                <div class="brand"> 
+                  <img src="images/thuas-logo.svg"> 
+                </div>
+                <p class="project-text-sm">Design & Creativity Cloud</p> 
+                <a href="#" class="project-link-sm">
+                  <p>View case study</p>
+                  <img src="images/arrow-left.svg">
+                </a>
+                <div class="thumbnail-sm">
+                  <img src="images/thuas-project-sm.png"> 
+                </div>
+              </div>
+
+            <div class="project-wrap-sm">
+              <div onclick="window.location='tui-landing-page.html'" href="#" class="project-item-sm tui">
+                <div class="brand"> 
+                  <img src="images/tui-logo.svg"> 
+                </div>
+                <p class="project-text-sm">Landing Page Experience</p> 
+                <a href="#" class="project-link-sm">
+                  <p>View case study</p>
+                  <img src="images/arrow-left.svg">
+                </a>
+                <div class="thumbnail-sm">
+                  <img src="images/tui-project-sm.png"> 
+                </div>
+              </div>
+             </div>
+           </section>   
+
 
         <!-- ************ Experience ************** -->
         <section class="experience">

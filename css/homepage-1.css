@@ -3,7 +3,7 @@
 
 header {
   overflow: hidden;
-  padding: 72px 0px;
+  padding: 80px 0px 40px 0px;
 }
 
 header h1 {
@@ -38,8 +38,122 @@ header h2 {
   border-radius: 100px;
 }
 
+.see-work-below {
+  display: inline-flex;
+  margin: 32px 0px;
+  border-radius: 8px;
+}
+
+.see-work-below p {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.see-work-below img{
+  margin-left: 8px;
+}
+
+@media (min-width: 960px) {
+ .see-work-below {
+  display: none;
+ }
+}
+
+@media (max-width: 960px) {
+
+  header h1 {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  header h2 {
+    text-align: left;
+  }
+
+  .job-wrap {
+    display: inline-flex;
+  }
+
+  .job{
+    font-size: 24px !important;
+  }
+}
+
+/* Projects Mobile 
+------------------------------------------------*/
+
+@media (min-width: 960px) {
+ #work-sm {
+  display: none;
+ }
+}
+
+.project-item-sm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.project-item-sm > .brand {
+  padding-top: 32px;
+  padding-bottom: 0px;
+}
+
+.thumbnail-sm {
+  margin: 0 auto;
+}
+
+.thumbnail-sm img{
+  width: 100%;
+  display: flex;
+}
+
+.project-text-sm {
+  margin: 0 auto;
+  padding: 8px 0; 
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-item-sm a {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  line-height: 0px;
+  padding: 0 16px;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.link-text-sm {
+  color: white;
+  margin: 0 auto;
+}
+
+.project-link-sm p{
+  color: white;
+}
+
+.project-link-sm img{
+  margin-left: 8px;
+}
+
+.project-link-sm ~ .project-link-sm img:hover{
+  margin-left: 16px;
+}
+
 /* Projects (Horizontally Scrollable)
 ------------------------------------------------*/
+
+@media (max-width: 960px) {
+ #work {
+  display: none;
+ }
+}
 
 .projects {
   color: #fff;
@@ -51,12 +165,15 @@ header h2 {
 
 
 .main {
+  margin: 0 auto;
+  max-width: 1900px;
   color: #959595;
   background-color: black;
   grid-area: main;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
+
 }
 
 .items {
@@ -430,10 +547,11 @@ header h2 {
   transition: all 0.2s;
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
  .title{ 
   font-size: 20px; 
   line-height: 0 !important;
+}
   
 
   .link-icon a {
@@ -458,13 +576,13 @@ header h2 {
 
   .education {
     margin-right: 0px;
-    background: rgba(40, 37, 40, 0.5);
+    background: linear-gradient(180deg, #000000 0%, #141314 100%);
     padding: 80px 32px 32px 32px;
     border-radius: 0px;
     margin-bottom: 0px;
   }
 
-  .work{
+  .work {
     background: rgba(40, 37, 40, 0.5);
     padding: 32px 32px 80px 32px;
     border-radius: 0px;
