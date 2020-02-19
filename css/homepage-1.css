@@ -56,7 +56,7 @@ header h2 {
   text-decoration: underline;
 }
 
-.see-work-below img{
+.see-work-below img {
   margin-left: 8px;
 }
 
@@ -168,6 +168,8 @@ header h2 {
 }
 
 .project-link-sm p{
+  opacity: 0.5;
+  font-weight: 300;
   color: white;
 }
 
@@ -176,7 +178,9 @@ header h2 {
 }
 
 .project-link-sm img{
+  opacity: 0.5;
   margin-left: 8px;
+  transform: translateY(2px);
 }
 
 .project-link-sm ~ .project-link-sm img:hover{
@@ -646,55 +650,6 @@ header h2 {
 
 /* Future Challeneges
 ------------------------------------------------*/
-
-@media (max-width: 960px) {
- .card{ 
-    margin: 32px 32px 72px 32px !important;
-    width: auto !important;
-    display: flex;
-    flex-direction: column;
-}
-
-  .future-challenges .flex-wrap {
-    display: block;
-  }
-
-  .future-challenges img {
-    position: initial !important;
-    margin: 0 !important;
-  }
-
-  .card-bg {
-    display: none;
-  }
-
-  .description {
-    margin-top: 24px !important;
-    transform: translateY(0px) !important;
-    opacity: 1 !important; 
-  }
-
-  .opacity h2 {
-    opacity: 1 !important;
-  }
-
-  .opacity p {
-    opacity: 1 !important;
-  }
-}
-
-@media (max-width: 560px) {
-  .future-challenges .jumbo{
-    font-size: 64px !important;
-    line-height: 72px !important;
-    padding-bottom: 40px;
-    padding-top: 72px;
-  }
-
-  .future-challenges {
-    padding-bottom: 72px !important;
-  }
-}
 
 .future-challenges {
   display: flex;

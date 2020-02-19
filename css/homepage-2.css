@@ -38,8 +38,13 @@
 }
 
 @media (max-width: 560px) {
+  .future-challenges .wrap-1080 {
+    padding: 0px 0px !important;
+
+  }
+
   .future-challenges .jumbo{
-    font-size: 64px !important;
+    font-size: 56px !important;
     line-height: 72px !important;
     padding-bottom: 40px;
     padding-top: 72px;
